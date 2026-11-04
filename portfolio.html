@@ -215,6 +215,12 @@ html:has(dialog[open]){overflow:hidden}
 .gallery img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .gallery li:last-child img{aspect-ratio:2.1/1}
 .gallery figcaption{text-align:center;padding-block-start:10px}
+@media (max-width:639px){
+.gallery{gap:20px}
+.gallery figure{background:#211a1d;border:1px solid var(--line);border-radius:var(--r);padding:8px}
+.gallery picture{border-radius:calc(var(--r) - 8px)}
+.gallery figcaption{padding-block:12px 6px;font-weight:600}
+}
 /* steps */
 .steps{display:grid;gap:28px;list-style:none;margin:0;padding:0;counter-reset:s}
 @media (min-width:700px){.steps{grid-template-columns:1fr 1fr}}
