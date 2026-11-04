@@ -1,4 +1,18 @@
 (function () {
+  var m = document.querySelector('.menu');
+  if (!m) return;
+  document.addEventListener('click', function (e) {
+    if (m.open && (!m.contains(e.target) || e.target.closest('.menu-panel a'))) m.open = false;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && m.open) {
+      m.open = false;
+      m.querySelector('summary').focus();
+    }
+  });
+})();
+
+(function () {
   var d = document.getElementById('lb');
   if (!d) return;
   var works = [].slice.call(document.querySelectorAll('.work'));
