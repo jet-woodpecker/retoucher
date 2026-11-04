@@ -13,6 +13,37 @@
 })();
 
 (function () {
+  [].forEach.call(document.querySelectorAll('.ba'), function (s) {
+    var r = s.querySelector('input');
+    var down = false;
+    function set(v) {
+      v = Math.max(0, Math.min(100, v));
+      r.value = v;
+      s.style.setProperty('--p', v + '%');
+    }
+    function at(e) {
+      var b = s.getBoundingClientRect();
+      set(((e.clientX - b.left) / b.width) * 100);
+    }
+    s.addEventListener('pointerdown', function (e) {
+      down = true;
+      at(e);
+    });
+    s.addEventListener('pointermove', function (e) {
+      if (down) at(e);
+    });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (n) {
+      s.addEventListener(n, function () {
+        down = false;
+      });
+    });
+    r.addEventListener('input', function () {
+      set(+r.value);
+    });
+  });
+})();
+
+(function () {
   var d = document.getElementById('lb');
   if (!d) return;
   var works = [].slice.call(document.querySelectorAll('.work'));
