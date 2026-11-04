@@ -105,6 +105,9 @@ h1{font-size:clamp(3.25rem,14.5vw,7.75rem);line-height:.96;max-width:9ch}
 /* services */
 .head{max-width:44rem;margin-block-end:clamp(32px,5vw,56px)}
 .head p{margin-block-start:16px;color:var(--muted)}
+#services{position:relative;--wave-up:clamp(48px,7vw,100px)}
+#services>.container{position:relative;z-index:1}
+.waves{position:absolute;inset-inline:0;top:calc(var(--wave-up) * -1);width:100%;height:calc(100% + var(--wave-up));pointer-events:none}
 .cards{display:grid;gap:16px;list-style:none;margin:0;padding:0}
 @media (min-width:600px){.cards{grid-template-columns:1fr 1fr}}
 @media (min-width:1000px){.cards{grid-template-columns:repeat(4,1fr)}}
