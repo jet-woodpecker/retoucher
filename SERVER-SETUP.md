@@ -4,9 +4,9 @@
 
 - Сайт статический: ни базы данных, ни форм, ни сторонних скриптов. Заказы идут по ссылке в Telegram, поэтому заявки на сервере не хранятся.
 - Имена файлов без хэшей. Поэтому **не ставьте `immutable`** на `images/`, `fonts/` и `script.js`. Подойдёт `Cache-Control: no-cache` или короткий `max-age`.
-- Перед публикацией замените заглушки:
-  - `https://example.com/` на ваш домен в `index.html`, `portfolio.html`, `robots.txt` и `sitemap.xml`;
-  - `your_telegram_username` на ваш ник в `index.html` и `portfolio.html`.
+- Сайт опубликован на GitHub Pages: https://jet-woodpecker.github.io/retoucher/
+- Сейчас это тестовый запуск: на обеих страницах стоит `noindex, nofollow`, потому что портфолио заполнено стоковыми фото. Когда замените их своими работами, верните в `index.html` и `portfolio.html` значение `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`.
+- При переходе на свой домен замените адрес в `index.html`, `portfolio.html`, `robots.txt` и `sitemap.xml`.
 
 Ниже общие инструкции для Apache и Nginx. На хостингах вроде Netlify, Cloudflare Pages или GitHub Pages сжатие и HTTPS обычно уже включены, остаётся проверить заголовки.
 
