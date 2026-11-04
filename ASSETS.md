@@ -30,9 +30,10 @@ Source Serif 4 (Adobe), лицензия SIL Open Font License 1.1, текст �
 
 ## Сгенерировано для проекта
 
-- `favicon.png`: буква «З» на чёрном фоне.
+- `images/logo.svg`: логотип Selena. Буквы взяты из шрифта Great Vibes (TypeSETit, лицензия SIL OFL 1.1, пакет `@fontsource/great-vibes`), переведены в кривые и масштабированы, хвостик нарисован отдельно.
+- `favicon.png`: буква S из Great Vibes на чёрном фоне.
 - `images/grain.png`: случайный шум, текстура зерна.
-- `images/og.jpg`: обложка для соцсетей из `hero` и текста.
+- `images/og.jpg`: обложка для соцсетей из `hero`, логотипа и текста.
 
 ## Как заменить работы в портфолио
 

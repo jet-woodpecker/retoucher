@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-<title>Природна ретуш фото від $5 — Зерно</title>
+<title>Природна ретуш фото від $5 — Selena</title>
 <meta name="description" content="Природна ретуш портретів, весільних і групових фото без пластикової шкіри. Пори, веснянки й характер залишаються. Від $5 за фото.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -13,15 +13,15 @@
 <link rel="preload" href="fonts/source-serif-4-cyrillic-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
-<meta property="og:title" content="Природна ретуш фото від $5 — Зерно">
+<meta property="og:title" content="Природна ретуш фото від $5 — Selena">
 <meta property="og:description" content="Ретуш без пластикової шкіри: портрети, весілля, групові фото.">
 <meta property="og:url" content="https://jet-woodpecker.github.io/retoucher/">
 <meta property="og:image" content="https://jet-woodpecker.github.io/retoucher/images/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Зерно: природна ретуш фото від $5">
+<meta property="og:image:alt" content="Selena: природна ретуш фото від $5">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Природна ретуш фото від $5 — Зерно">
+<meta name="twitter:title" content="Природна ретуш фото від $5 — Selena">
 <meta name="twitter:description" content="Ретуш без пластикової шкіри: портрети, весілля, групові фото.">
 <meta name="twitter:image" content="https://jet-woodpecker.github.io/retoucher/images/og.jpg">
 <style>
@@ -52,7 +52,9 @@ section{padding-block:clamp(64px,9vw,120px)}
 /* header */
 .top{position:sticky;top:0;z-index:40;background:rgba(10,7,8,.86);backdrop-filter:blur(8px);padding-block-start:env(safe-area-inset-top)}
 .top-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding-block:12px}
-.logo{font:900 1.625rem/1 var(--serif);text-decoration:none}
+.logo{display:block;text-decoration:none}
+.logo img{height:50px;width:auto}
+@media (min-width:860px){.logo img{height:58px}}
 .nav{order:3;width:100%;display:flex;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;scrollbar-width:none;justify-content:space-between;gap:10px;font-size:.875rem}
 @media (max-width:359px){.nav{font-size:.8125rem}}
 .nav a{text-decoration:none;display:inline-block;padding-block:6px}
@@ -65,11 +67,12 @@ section{padding-block:clamp(64px,9vw,120px)}
 .hero::before{content:"";position:absolute;inset-inline:0;inset-block-start:0;height:125vw;max-height:760px;z-index:1;background:linear-gradient(180deg,rgba(10,7,8,0) 74%,var(--ink) 100%)}
 .hero-in{position:relative;z-index:2;padding-block:min(112vw,700px) 72px}
 h1{font-size:clamp(3.25rem,14.5vw,7.75rem);line-height:.96;max-width:9ch}
+.hero-in h1{font-size:clamp(3.25rem,14.5vw,6rem)}
 .hero-lead{max-width:34rem;margin-block:22px 28px;font-size:clamp(1.0625rem,2vw,1.25rem)}
 .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
 @media (min-width:860px){
 .hero-photo{width:min(58%,800px);height:100%;max-height:none}
-.hero::before{height:100%;max-height:none;background:linear-gradient(90deg,var(--ink) 42%,rgba(10,7,8,0) 54%),linear-gradient(0deg,var(--ink) 0,rgba(10,7,8,0) 7%)}
+.hero::before{height:100%;max-height:none;background:linear-gradient(90deg,var(--ink) max(42%,calc(100% - 800px)),rgba(10,7,8,0) calc(max(42%,calc(100% - 800px)) + min(12%,154px))),linear-gradient(0deg,var(--ink) 0,rgba(10,7,8,0) 7%)}
 .hero-in{padding-block:clamp(72px,10vh,120px) clamp(80px,12vh,130px);min-height:min(86vh,800px);display:flex;flex-direction:column;justify-content:center}
 }
 /* approach */
@@ -222,7 +225,7 @@ html:has(dialog[open]){overflow:hidden}
 <body>
 <header class="top">
 <div class="container top-in">
-<a class="logo" href="#top">Зерно</a>
+<a class="logo" href="#top"><img src="images/logo.svg" alt="Selena" width="857" height="383"></a>
 <nav class="nav" aria-label="Основне меню">
 <a href="#services">Послуги</a>
 <a href="portfolio.html">Портфоліо</a>
@@ -241,7 +244,7 @@ html:has(dialog[open]){overflow:hidden}
 <img src="images/hero-768.jpg" srcset="images/hero-640.jpg 640w, images/hero-768.jpg 768w, images/hero-1024.jpg 1024w, images/hero-1280.jpg 1280w" sizes="(min-width: 860px) min(58vw, 800px), 100vw" alt="Усміхнена жінка в профіль у теплому плівковому світлі на темному тлі" width="1280" height="1600" decoding="async" fetchpriority="high">
 </picture>
 <div class="container hero-in">
-<h1>Ретуш, яку не видно</h1>
+<h1>Ретуш, у&nbsp;якій ви лишаєтесь собою</h1>
 <p class="hero-lead">Прибираю зайве, а шкіра, пори й характер залишаються вашими. Без пластику, масок і чужого обличчя: тільки ви у своєму найкращому світлі.</p>
 <div class="hero-cta">
 <a class="btn" href="https://t.me/retouch_selena">Надіслати фото</a>
@@ -436,12 +439,12 @@ html:has(dialog[open]){overflow:hidden}
 <footer class="foot">
 <div class="container foot-in">
 <div class="foot-row">
-<span class="logo">Зерно</span>
+<span class="logo"><img src="images/logo.svg" alt="Selena" width="857" height="383"></span>
 <span>Природна ретуш фотографій</span>
 <a href="https://t.me/retouch_selena">Telegram</a>
 </div>
 </div>
 </footer>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://jet-woodpecker.github.io/retoucher/#website","name":"Зерно","url":"https://jet-woodpecker.github.io/retoucher/","inLanguage":"uk-UA"},{"@type":"Organization","@id":"https://jet-woodpecker.github.io/retoucher/#org","name":"Зерно","url":"https://jet-woodpecker.github.io/retoucher/","logo":"https://jet-woodpecker.github.io/retoucher/favicon.png","sameAs":["https://t.me/retouch_selena"]},{"@type":"Service","@id":"https://jet-woodpecker.github.io/retoucher/#service","name":"Природна ретуш фотографій","serviceType":"Ретуш фотографій","provider":{"@id":"https://jet-woodpecker.github.io/retoucher/#org"},"url":"https://jet-woodpecker.github.io/retoucher/","offers":[{"@type":"Offer","name":"Природна","price":"5","priceCurrency":"USD","description":"Для соцмереж, сімейних фото й серій","url":"https://jet-woodpecker.github.io/retoucher/#tariffs"},{"@type":"Offer","name":"Портретна","price":"10","priceCurrency":"USD","description":"Для портретів, резюме й контенту","url":"https://jet-woodpecker.github.io/retoucher/#tariffs"},{"@type":"Offer","name":"Ексклюзив","price":"30","priceCurrency":"USD","description":"Для обкладинок, друку й головних весільних кадрів","url":"https://jet-woodpecker.github.io/retoucher/#tariffs"}]},{"@type":"FAQPage","@id":"https://jet-woodpecker.github.io/retoucher/#faq","mainEntity":[{"@type":"Question","name":"Які файли надсилати?","acceptedAnswer":{"@type":"Answer","text":"Найкраще RAW, TIFF або JPG у максимальній якості, файлом без стиснення. Скриншоти й фото, стиснені месенджером, дають гірший результат."}},{"@type":"Question","name":"Скільки часу займає ретуш?","acceptedAnswer":{"@type":"Answer","text":"До 3 робочих днів. Тариф «Ексклюзив» іде поза чергою. Терміни для великих серій узгоджуємо окремо."}},{"@type":"Question","name":"Скільки правок входить у ціну?","acceptedAnswer":{"@type":"Answer","text":"«Природна» — 1 раунд, «Портретна» — 2, «Ексклюзив» — 3. Правка уточнює вже зроблену роботу, а нове завдання рахується окремо."}},{"@type":"Question","name":"Чи буде помітно, що фото ретушоване?","acceptedAnswer":{"@type":"Answer","text":"Не має бути. Я прибираю те, що минає: висипання, почервоніння, випадкові тіні. Пори, веснянки й міміка залишаються, тож ви впізнаєте себе."}},{"@type":"Question","name":"Як рахуєте групові фото?","acceptedAnswer":{"@type":"Answer","text":"Ціна стартує від $5 і залежить від кількості людей у кадрі та обраного тарифу. Надішліть фото, і я назву точну суму ще до початку роботи."}},{"@type":"Question","name":"Чи можна замовити весільну серію?","acceptedAnswer":{"@type":"Answer","text":"Так. Кожне фото рахується за обраним тарифом, а для кількох головних кадрів можна взяти «Ексклюзив». Колір тримаю однаковим на всю серію."}},{"@type":"Question","name":"Фото підійдуть для соцмереж і друку?","acceptedAnswer":{"@type":"Answer","text":"Для екрана достатньо JPG із тарифу «Природна». Повна роздільна здатність є в тарифі «Портретна». Файл TIFF і підготовка до друку входять в «Ексклюзив»."}},{"@type":"Question","name":"Як оплатити?","acceptedAnswer":{"@type":"Answer","text":"Спосіб оплати узгоджуємо в Telegram, коли обговорюємо замовлення."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://jet-woodpecker.github.io/retoucher/#website","name":"Selena","url":"https://jet-woodpecker.github.io/retoucher/","inLanguage":"uk-UA"},{"@type":"Organization","@id":"https://jet-woodpecker.github.io/retoucher/#org","name":"Selena","url":"https://jet-woodpecker.github.io/retoucher/","logo":"https://jet-woodpecker.github.io/retoucher/favicon.png","sameAs":["https://t.me/retouch_selena"]},{"@type":"Service","@id":"https://jet-woodpecker.github.io/retoucher/#service","name":"Природна ретуш фотографій","serviceType":"Ретуш фотографій","provider":{"@id":"https://jet-woodpecker.github.io/retoucher/#org"},"url":"https://jet-woodpecker.github.io/retoucher/","offers":[{"@type":"Offer","name":"Природна","price":"5","priceCurrency":"USD","description":"Для соцмереж, сімейних фото й серій","url":"https://jet-woodpecker.github.io/retoucher/#tariffs"},{"@type":"Offer","name":"Портретна","price":"10","priceCurrency":"USD","description":"Для портретів, резюме й контенту","url":"https://jet-woodpecker.github.io/retoucher/#tariffs"},{"@type":"Offer","name":"Ексклюзив","price":"30","priceCurrency":"USD","description":"Для обкладинок, друку й головних весільних кадрів","url":"https://jet-woodpecker.github.io/retoucher/#tariffs"}]},{"@type":"FAQPage","@id":"https://jet-woodpecker.github.io/retoucher/#faq","mainEntity":[{"@type":"Question","name":"Які файли надсилати?","acceptedAnswer":{"@type":"Answer","text":"Найкраще RAW, TIFF або JPG у максимальній якості, файлом без стиснення. Скриншоти й фото, стиснені месенджером, дають гірший результат."}},{"@type":"Question","name":"Скільки часу займає ретуш?","acceptedAnswer":{"@type":"Answer","text":"До 3 робочих днів. Тариф «Ексклюзив» іде поза чергою. Терміни для великих серій узгоджуємо окремо."}},{"@type":"Question","name":"Скільки правок входить у ціну?","acceptedAnswer":{"@type":"Answer","text":"«Природна» — 1 раунд, «Портретна» — 2, «Ексклюзив» — 3. Правка уточнює вже зроблену роботу, а нове завдання рахується окремо."}},{"@type":"Question","name":"Чи буде помітно, що фото ретушоване?","acceptedAnswer":{"@type":"Answer","text":"Не має бути. Я прибираю те, що минає: висипання, почервоніння, випадкові тіні. Пори, веснянки й міміка залишаються, тож ви впізнаєте себе."}},{"@type":"Question","name":"Як рахуєте групові фото?","acceptedAnswer":{"@type":"Answer","text":"Ціна стартує від $5 і залежить від кількості людей у кадрі та обраного тарифу. Надішліть фото, і я назву точну суму ще до початку роботи."}},{"@type":"Question","name":"Чи можна замовити весільну серію?","acceptedAnswer":{"@type":"Answer","text":"Так. Кожне фото рахується за обраним тарифом, а для кількох головних кадрів можна взяти «Ексклюзив». Колір тримаю однаковим на всю серію."}},{"@type":"Question","name":"Фото підійдуть для соцмереж і друку?","acceptedAnswer":{"@type":"Answer","text":"Для екрана достатньо JPG із тарифу «Природна». Повна роздільна здатність є в тарифі «Портретна». Файл TIFF і підготовка до друку входять в «Ексклюзив»."}},{"@type":"Question","name":"Як оплатити?","acceptedAnswer":{"@type":"Answer","text":"Спосіб оплати узгоджуємо в Telegram, коли обговорюємо замовлення."}}]}]}</script>
 </body>
 </html>

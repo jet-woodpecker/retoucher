@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-<title>Портфоліо ретуші: до й після — Зерно</title>
+<title>Портфоліо ретуші: до й після — Selena</title>
 <meta name="description" content="Приклади природної ретуші: відкрийте роботу на весь екран і порівняйте фото до та після повзунком.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -13,15 +13,15 @@
 <link rel="preload" href="fonts/source-serif-4-cyrillic-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
-<meta property="og:title" content="Портфоліо ретуші: до й після — Зерно">
+<meta property="og:title" content="Портфоліо ретуші: до й після — Selena">
 <meta property="og:description" content="Приклади природної ретуші: відкрийте роботу на весь екран і порівняйте фото до та після повзунком.">
 <meta property="og:url" content="https://jet-woodpecker.github.io/retoucher/portfolio.html">
 <meta property="og:image" content="https://jet-woodpecker.github.io/retoucher/images/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Зерно: природна ретуш фото від $5">
+<meta property="og:image:alt" content="Selena: природна ретуш фото від $5">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Портфоліо ретуші: до й після — Зерно">
+<meta name="twitter:title" content="Портфоліо ретуші: до й після — Selena">
 <meta name="twitter:description" content="Приклади природної ретуші: відкрийте роботу на весь екран і порівняйте фото до та після повзунком.">
 <meta name="twitter:image" content="https://jet-woodpecker.github.io/retoucher/images/og.jpg">
 <style>
@@ -52,7 +52,9 @@ section{padding-block:clamp(64px,9vw,120px)}
 /* header */
 .top{position:sticky;top:0;z-index:40;background:rgba(10,7,8,.86);backdrop-filter:blur(8px);padding-block-start:env(safe-area-inset-top)}
 .top-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding-block:12px}
-.logo{font:900 1.625rem/1 var(--serif);text-decoration:none}
+.logo{display:block;text-decoration:none}
+.logo img{height:50px;width:auto}
+@media (min-width:860px){.logo img{height:58px}}
 .nav{order:3;width:100%;display:flex;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;scrollbar-width:none;justify-content:space-between;gap:10px;font-size:.875rem}
 @media (max-width:359px){.nav{font-size:.8125rem}}
 .nav a{text-decoration:none;display:inline-block;padding-block:6px}
@@ -65,11 +67,12 @@ section{padding-block:clamp(64px,9vw,120px)}
 .hero::before{content:"";position:absolute;inset-inline:0;inset-block-start:0;height:125vw;max-height:760px;z-index:1;background:linear-gradient(180deg,rgba(10,7,8,0) 74%,var(--ink) 100%)}
 .hero-in{position:relative;z-index:2;padding-block:min(112vw,700px) 72px}
 h1{font-size:clamp(3.25rem,14.5vw,7.75rem);line-height:.96;max-width:9ch}
+.hero-in h1{font-size:clamp(3.25rem,14.5vw,6rem)}
 .hero-lead{max-width:34rem;margin-block:22px 28px;font-size:clamp(1.0625rem,2vw,1.25rem)}
 .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
 @media (min-width:860px){
 .hero-photo{width:min(58%,800px);height:100%;max-height:none}
-.hero::before{height:100%;max-height:none;background:linear-gradient(90deg,var(--ink) 42%,rgba(10,7,8,0) 54%),linear-gradient(0deg,var(--ink) 0,rgba(10,7,8,0) 7%)}
+.hero::before{height:100%;max-height:none;background:linear-gradient(90deg,var(--ink) max(42%,calc(100% - 800px)),rgba(10,7,8,0) calc(max(42%,calc(100% - 800px)) + min(12%,154px))),linear-gradient(0deg,var(--ink) 0,rgba(10,7,8,0) 7%)}
 .hero-in{padding-block:clamp(72px,10vh,120px) clamp(80px,12vh,130px);min-height:min(86vh,800px);display:flex;flex-direction:column;justify-content:center}
 }
 /* approach */
@@ -222,7 +225,7 @@ html:has(dialog[open]){overflow:hidden}
 <body>
 <header class="top">
 <div class="container top-in">
-<a class="logo" href="index.html#top">Зерно</a>
+<a class="logo" href="index.html#top"><img src="images/logo.svg" alt="Selena" width="857" height="383"></a>
 <nav class="nav" aria-label="Основне меню">
 <a href="index.html#services">Послуги</a>
 <a href="portfolio.html" aria-current="page">Портфоліо</a>
@@ -268,7 +271,7 @@ html:has(dialog[open]){overflow:hidden}
 <footer class="foot">
 <div class="container foot-in">
 <div class="foot-row">
-<span class="logo">Зерно</span>
+<span class="logo"><img src="images/logo.svg" alt="Selena" width="857" height="383"></span>
 <span>Природна ретуш фотографій</span>
 <a href="https://t.me/retouch_selena">Telegram</a>
 </div>
